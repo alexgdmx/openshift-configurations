@@ -2,7 +2,7 @@
 
 
 ```bash
-$ oc create secret generic cloud-credentials --namespace openshift-adp --from-file cloud=
+$ oc create secret generic cloud-credentials --namespace openshift-adp --from-file cloud=secret-minio
 ```
 
 ## Tool to generate minio-keyes
