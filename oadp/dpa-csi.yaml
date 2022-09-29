@@ -9,6 +9,8 @@ spec:
       - openshift
       - aws
       - csi
+    featureFlags:
+      - EnableCSI
   backupLocations:
     - name: default
       velero:
@@ -20,8 +22,8 @@ spec:
         config:
           region: minio
           profile: "default"
-          insecureSkipTLSVerify: "true"
-          s3Url: "http://s3.openshift.training:9000"
+          insecureSkipTLSVerify: "false"
+          s3Url: "https://minio-s3.openshift.training:9000"
           s3ForcePathStyle: "true"
         credential:
           key: cloud
